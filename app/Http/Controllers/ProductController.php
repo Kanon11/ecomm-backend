@@ -61,7 +61,6 @@ class ProductController extends Controller
     }
     public function search($key)
     {
-        // return $key;
        return Product::where('name','LIKE','%'.$key.'%')->get();
     }
 }
